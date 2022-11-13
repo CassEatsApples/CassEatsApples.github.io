@@ -1,0 +1,232 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <title> Continuing Education </title>
+        <meta charset="utf=8">
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+
+    <body>
+        <form>
+            <div class="center">
+                <banner>
+                    <a href="https://www.centennialcollege.ca">
+                        <img src="centennial_college_logo.jpg" />
+                    </a>
+                </banner>
+
+                <h1> Centennial College</h1>
+
+                <h2>Continuing Education Course/Instructor Evaluation </h2>
+
+                <h4>Please read each statement carefully and consider each one individually. Use the computer card to
+                    make
+                    your choice. Give only one answer for each question. </h4>
+                <label for="cname">Course Name/Code</label>
+                <input type="text" id="cname" name="cname">
+
+                <p>Semester</p>
+
+                <select id="semester" name="semester">
+                    <option value="fa">Fall</option>
+                    <option value="wi">Winter</option>
+                    <option value="sp">Spring</option>
+                    <option value="sm">Summer</option>
+                </select>
+
+                <p>Year</p>
+
+                <select id="semester" name="semester">
+                    <option value="22">2022</option>
+                    <option value="23">2023</option>
+                    <option value="24">2024</option>
+                    <option value="25">2025</option>
+                </select>
+
+                <h3>Instructor</h3>
+                <p>How would you rate the instructor's </p>
+                <p>1. Knowledge of subject?</p>
+                <label class="container">(a)Excellent
+                    <input type="checkbox" name="subject">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">(b)Good
+                    <input type="checkbox" name="subject">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">(c)Fair
+                    <input type="checkbox" name="subject">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">(d)Not Satisfactory
+                    <input type="checkbox" name="subject">
+                    <span class="checkmark"></span>
+                </label>
+
+                <p>2. Helpfulness?</p>
+                <label class="container">(a)Excellent
+                    <input type="checkbox" name="subject">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">(b)Good
+                    <input type="checkbox" name="subject">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">(c)Fair
+                    <input type="checkbox" name="subject">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">(d)Not Satisfactory
+                    <input type="checkbox" name="subject">
+                    <span class="checkmark"></span>
+                </label>
+
+                <p>3. Courtesty and respect for all students?</p>
+                <label class="container">(a)Excellent
+                    <input type="checkbox" name="subject">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">(b)Good
+                    <input type="checkbox" name="subject">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">(c)Fair
+                    <input type="checkbox" name="subject">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">(d)Not Satisfactory
+                    <input type="checkbox" name="subject">
+                    <span class="checkmark"></span>
+                </label>
+
+                <p>4. Communication skill?</p>
+                <label class="container">(a)Excellent
+                    <input type="checkbox" name="subject">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">(b)Good
+                    <input type="checkbox" name="subject">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">(c)Fair
+                    <input type="checkbox" name="subject">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">(d)Not Satisfactory
+                    <input type="checkbox" name="subject">
+                    <span class="checkmark"></span>
+                </label>
+
+                <p>5. Overall performance?</p>
+                <label class="container">(a)Excellent
+                    <input type="checkbox" name="subject">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">(b)Good
+                    <input type="checkbox" name="subject">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">(c)Fair
+                    <input type="checkbox" name="subject">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">(d)Not Satisfactory
+                    <input type="checkbox" name="subject">
+                    <span class="checkmark"></span>
+                </label>
+                <h3> Course </h3>
+
+                <h5>On a scale of 1 – 5, 1 being negative and 5 positives, how would you rate your experiences. </h5>
+
+                <p>6. How would you rate the course materials?</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="5" value="3" class="slider" id="myRange">
+                    <h5>Scale: <span id="demo"></span></h5>
+                </div>
+                <script>
+                    var slider = document.getElementById("myRange");
+                    var output = document.getElementById("demo");
+                    output.innerHTML = slider.value;
+
+                    slider.oninput = function () {
+                        output.innerHTML = this.value;
+                    }
+                </script>
+
+                <p>7. How mush did you like ?</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="5" value="3" class="slider" id="iRange">
+                    <h5>Scale: <span id="memo"></span></h5>
+                </div>
+                <script>
+                    var slider = document.getElementById("iRange");
+                    var output = document.getElementById("memo");
+                    output.innerHTML = slider.value;
+
+                    slider.oninput = function () {
+                        output.innerHTML = this.value;
+                    }
+                </script>
+
+                <p>8. How would you rate this course overall?</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="5" value="3" class="slider" id="uRange">
+                    <h5>Scale: <span id="bemo"></span></h5>
+                </div>
+                <script>
+                    var slider = document.getElementById("uRange");
+                    var output = document.getElementById("bemo");
+                    output.innerHTML = slider.value;
+
+                    slider.oninput = function () {
+                        output.innerHTML = this.value;
+                    }
+                </script>
+                <h3> General Information</h3>
+                <p>9. Was the course outline reviewed/explained at the beginning of your course?</p>
+                <input type="button" value="Yes">
+                <input type="button" value="No">
+                <input type="button" value="Not Sure">
+
+                <p>10. Would you recommend this course to a friend with the same intrests?</p>
+                <input type="button" value="Yes">
+                <input type="button" value="No">
+                <input type="button" value="Not Sure">
+
+
+                <h3> Any Other Comments</h3>
+                <p>11. What is the best thing about this course?</p>
+
+                <label for="fname"></label>
+                <input type="test" id="fname" name="fname">
+
+                <p>12. How could we improve this course? </p>
+
+                <label for="fname"></label>
+                <input type="test" id="fname" name="fname">
+                <p>13. Other:</p>
+                <textarea> add text... </textarea>
+                <p>Thank you! We pay attention to your feedback</p>
+                <input type="button" value="Submit">
+                <p></p>
+                <p><a href="https://www.centennialcollege.ca">Web: www.centennialcollege.ca</a>
+                <p>
+                <p> <a href="mailto:cooped@centennialcollege.ca">Email:cooped@centennialcollege.ca </a></p>
+            </div>
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+    </html>
